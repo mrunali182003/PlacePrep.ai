@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.chat-box {
+  width: 450px;
+  height: 400px;
+  margin: auto;
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.question {
+  background: #2563eb;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 80%;
+}
+
+.answer {
+  background: #16a34a;
+  padding: 10px;
+  border-radius: 8px;
+  align-self: flex-end;
+  max-width: 80%;
+}
+
+.feedback {
+  background: #f59e0b;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 80%;
+}
+
+.loading {
+  font-style: italic;
+  color: #ccc;
+}
+
+.input-area {
+  margin-top: 15px;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.loading {
+  font-style: italic;
+  color: #ccc;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
