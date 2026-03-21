@@ -111,6 +111,26 @@ function App() {
         {/* 404 */}
         <Route path="*" element={<NotFound />} />
       </Routes>
+
+      {/* ✅ FOOTER ADDED (YOUR NAME) */}
+      <div style={{
+        textAlign: "center",
+        padding: "12px",
+        fontSize: "13px",
+        color: "rgba(255,255,255,0.5)",
+        borderTop: "1px solid rgba(255,255,255,0.1)",
+        marginTop: "20px"
+      }}>
+        Made with ❤️ by{" "}
+        <a 
+          href="https://linkedin.com/in/yourprofile" 
+          target="_blank"
+          style={{ color: "#00f5d4", textDecoration: "none" }}
+        >
+          Mrunali Deshmukh
+        </a>
+      </div>
+
     </Router>
   )
 }
